@@ -22,7 +22,7 @@ To use it:
 
 or for funny mode
 
-   $ fcm -f | git commit -a -F -
+    $ fcm -f | git commit -a -F -
 
 # Contribute
 
