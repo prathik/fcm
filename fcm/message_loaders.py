@@ -18,7 +18,8 @@ class LocalFunnyLoader:
         "just shoot me",
         "I have no idea what I'm doing here.",
         "lolwhat?",
-        "that coulda been bad"
+        "that coulda been bad",
+        "It works! Just ship it! :boat:"
     ]
 
     def get_message(self):
