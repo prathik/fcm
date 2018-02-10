@@ -7,12 +7,12 @@ dependencies = ['click']
 
 setup(
     name='fcmxz',
-    version='0.1.0',
+    version='0.2.0',
     url='https://github.com/prathik/python-fcm',
     license='BSD',
     author='Prathik Raj',
     author_email='prathik011@gmail.com',
-    description='Generates the first commit message for you',
+    description='Generates the funny commit message for you',
     long_description=__doc__,
     packages=find_packages(exclude=['tests']),
     include_package_data=True,

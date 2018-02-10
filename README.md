@@ -1,6 +1,6 @@
 # :sunglasses: FCM
 
-Generates the first commit message for you
+Generates the funny commit message for you.
 
 :ghost: Funny mode to generate funny commit messages.
 
@@ -24,7 +24,7 @@ To use it:
 
     $ fcm | git commit -a -F -
 
-or for funny mode
+or for first mode
 
     $ fcm -f | git commit -a -F -
 

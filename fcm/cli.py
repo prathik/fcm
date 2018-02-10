@@ -3,8 +3,8 @@ from message_loaders import LocalMessageLoader
 from message_loaders import LocalFunnyLoader
 
 @click.command()
-@click.option('--funny', '-f', is_flag=True, help='Generates a joke')
-def main(funny):
-    """Generates the first commit message for you"""
-    loader = LocalFunnyLoader() if funny else LocalMessageLoader()
+@click.option('--first', '-f', is_flag=True, help='Generates a joke')
+def main(first):
+    """Generates funny commit message for you"""
+    loader = LocalMessageLoader() if first else LocalFunnyLoader()
     click.echo(loader.get_message())
