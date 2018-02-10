@@ -2,6 +2,7 @@
 
 Generates the first commit message for you
 
+:ghost: Funny mode to generate funny commit messages.
 
 # Installation
 
@@ -17,5 +18,12 @@ Simply run:
 
 To use it:
 
-    $ fcm --help
+    $ fcm | git commit -a -F -
 
+or for funny mode
+
+   $ fcm -f | git commit -a -F -
+
+# Contribute
+
+Open message_loaders.py and add your own messages and raise a PR!
