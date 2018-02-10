@@ -6,6 +6,10 @@ Generates the first commit message for you
 
 # Installation
 
+Install using `pip` by running `pip install fcmxz`.
+
+`fcmxz` because `fcm` was already taken :ghost:
+
 If you don't use `pipsi`, you're missing out.
 Here are [installation instructions](https://github.com/mitsuhiko/pipsi#readme).
 

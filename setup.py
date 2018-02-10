@@ -6,7 +6,7 @@ from setuptools import find_packages, setup
 dependencies = ['click']
 
 setup(
-    name='fcm',
+    name='fcmxz',
     version='0.1.0',
     url='https://github.com/prathik/python-fcm',
     license='BSD',
