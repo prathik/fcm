@@ -12,7 +12,12 @@ class LocalFunnyLoader:
         "Commit committed",
         "Just have the project 90% done and call it \"Initial import\"",
         "Whatever.",
-        "A journey of a thousand miles begins with a single step"
+        "A journey of a thousand miles begins with a single step",
+        "I don't believe it.",
+        "Future self, please forgive me and don't hit me with the baseball bat again!",
+        "just shoot me",
+        "I have no idea what I'm doing here.",
+        "lolwhat?"
     ]
 
     def get_message(self):
