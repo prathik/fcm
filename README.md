@@ -1,4 +1,4 @@
-# FCM
+# :sunglasses: FCM
 
 Generates the first commit message for you
 
