@@ -31,3 +31,7 @@ or for funny mode
 # Contribute
 
 Open message_loaders.py and add your own messages and raise a PR!
+
+# Examples
+
+Checkout the commit messages of this package.
