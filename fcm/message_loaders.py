@@ -17,7 +17,8 @@ class LocalFunnyLoader:
         "Future self, please forgive me and don't hit me with the baseball bat again!",
         "just shoot me",
         "I have no idea what I'm doing here.",
-        "lolwhat?"
+        "lolwhat?",
+        "that coulda been bad"
     ]
 
     def get_message(self):
