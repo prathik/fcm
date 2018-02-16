@@ -28,6 +28,14 @@ or for first mode
 
     $ fcm -f | git commit -a -F -
 
+or for the hack mode
+
+    $ fcm -h | git commit -a -F -
+
+For the purists out there - you can add your custom message as follows
+
+    $ fcm -h -m "Hardcoding EU server address" | git commit -a -F -
+
 # Contribute
 
 Open message_loaders.py and add your own messages and raise a PR!

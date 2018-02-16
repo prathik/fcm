@@ -38,3 +38,21 @@ class LocalMessageLoader:
 
     def get_message(self):
         return random.choice(self.messages)
+
+
+class LocalHackLoader:
+    messages = [
+        "will be eventually fixed in the future, isn't that what we all tell ourselves",
+        "did it to unblock business, just like everything else",
+        "will fix this.. someday",
+        "adding this commit now, so that there are jobs left for people in the future",
+        "the important thing is - business is unblocked",
+        "message to anyone who sees this in the future: THIS IS SPARTA",
+        "for the love of God and all things holy - please fix this",
+        "someone - someday - will recall stories of how they fixed this hack",
+        "I am going to look back at this someday and scream at the dev who wrote it only to realize it was me",
+        "I like to live dangerously"
+    ]
+
+    def get_message(self):
+        return random.choice(self.messages)
