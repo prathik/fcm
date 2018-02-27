@@ -3,7 +3,7 @@ Generates the first commit message for you
 """
 from setuptools import find_packages, setup
 
-dependencies = ['click']
+dependencies = ['click', 'gitpython']
 
 setup(
     name='fcmxz',

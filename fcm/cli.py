@@ -2,6 +2,8 @@ import click
 from message_loaders import LocalMessageLoader
 from message_loaders import LocalFunnyLoader
 from message_loaders import LocalHackLoader
+import git
+import os
 
 @click.command()
 @click.option('--first', '-f', is_flag=True, help='Interesting first commit message')
@@ -23,4 +25,8 @@ def main(first, hack, message):
         cm = """{}
 ===
 {}""".format(message, cm)
-    click.echo(cm)
+        
+    repo = git.Repo(os.getcwd())
+    repo.git.commit('-am', cm)
+                    
+    # click.echo(cm)
