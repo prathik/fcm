@@ -22,19 +22,19 @@ Simply run:
 
 To use it:
 
-    $ fcm | git commit -a -F -
+    $ fcm
 
 or for first mode
 
-    $ fcm -f | git commit -a -F -
+    $ fcm -f
 
 or for the hack mode
 
-    $ fcm -h | git commit -a -F -
+    $ fcm -h
 
 For the purists out there - you can add your custom message as follows
 
-    $ fcm -h -m "Hardcoding EU server address" | git commit -a -F -
+    $ fcm -h -m "Hardcoding EU server address"
 
 # Contribute
 
@@ -43,3 +43,7 @@ Open message_loaders.py and add your own messages and raise a PR!
 # Examples
 
 Checkout the commit messages of this package.
+
+# Changelog
+
+Tue Feb 27 20:11:34 IST 2018 Added auto commit feature

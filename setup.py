@@ -7,7 +7,7 @@ dependencies = ['click', 'gitpython']
 
 setup(
     name='fcmxz',
-    version='0.3.0',
+    version='0.4.0',
     url='https://github.com/prathik/python-fcm',
     license='BSD',
     author='Prathik Raj',
