@@ -33,7 +33,9 @@ def main(first, hack, signature, message):
 {}""".format(message, cm)
 
     if signature:
-        print get_signature(signature)
+        cm = """{}
+===
+{}""".format(cm, get_signature(signature))
         
     repo = git.Repo(os.getcwd())
     repo.git.commit('-am', cm)
