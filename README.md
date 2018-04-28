@@ -41,6 +41,8 @@ For the purists out there - you can add your custom message as follows
 Support for ASCII signatures via the `-s` prompt
 
     $ fcm -s truck -m "A truck ascii signature" -h
+    
+Say hi to Cartmam https://github.com/prathik/fcm/commit/2871ca27f49d95ca750c9769306057b39581eea4
 
 # Contribute
 
