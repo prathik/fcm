@@ -8,7 +8,7 @@ Supports ASCII signatures, hack mode, funny commit messages and more to come!
 
 Install using `pip` by running `pip install fcmxz`.
 
-`fcmxz` because `fcm` was already taken :ghost:
+`fcmxz` because `fcm` was already taken.
 
 If you don't use `pipsi`, you're missing out.
 Here are [installation instructions](https://github.com/mitsuhiko/pipsi#readme).
@@ -49,7 +49,3 @@ Open message_loaders.py and add your own messages and raise a PR!
 # Examples
 
 Checkout the commit messages of this package.
-
-# Changelog
-
-Tue Feb 27 20:11:34 IST 2018 Added auto commit feature
