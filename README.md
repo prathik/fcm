@@ -1,8 +1,10 @@
 # :sunglasses: FCM
 
-Generates the funny commit message for you.
+Generates the interesting commit message for you.
 
 :ghost: Funny mode to generate funny commit messages.
+
+Supports ASCII signatures, hack mode, funny commit messages and more to come!
 
 # Installation
 
