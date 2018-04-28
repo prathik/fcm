@@ -36,6 +36,10 @@ For the purists out there - you can add your custom message as follows
 
     $ fcm -h -m "Hardcoding EU server address"
 
+Support for ASCII signatures via the `-s` prompt
+
+    $ fcm -s truck -m "A truck ascii signature" -h
+
 # Contribute
 
 Open message_loaders.py and add your own messages and raise a PR!
