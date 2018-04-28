@@ -1,4 +1,4 @@
-# :sunglasses: FCM
+# FCM
 
 Generates the interesting commit message for you.
 
