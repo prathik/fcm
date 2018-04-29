@@ -1,14 +1,14 @@
-# :sunglasses: FCM
+# FCM
 
-Generates the funny commit message for you.
+Generates the interesting commit message for you.
 
-:ghost: Funny mode to generate funny commit messages.
+Supports ASCII signatures, hack mode, funny commit messages and more to come!
 
 # Installation
 
 Install using `pip` by running `pip install fcmxz`.
 
-`fcmxz` because `fcm` was already taken :ghost:
+`fcmxz` because `fcm` was already taken.
 
 If you don't use `pipsi`, you're missing out.
 Here are [installation instructions](https://github.com/mitsuhiko/pipsi#readme).
@@ -36,6 +36,12 @@ For the purists out there - you can add your custom message as follows
 
     $ fcm -h -m "Hardcoding EU server address"
 
+Support for ASCII signatures via the `-s` prompt
+
+    $ fcm -s truck -m "A truck ascii signature" -h
+    
+Say hi to Cartmam https://github.com/prathik/fcm/commit/2871ca27f49d95ca750c9769306057b39581eea4
+
 # Contribute
 
 Open message_loaders.py and add your own messages and raise a PR!
@@ -43,7 +49,3 @@ Open message_loaders.py and add your own messages and raise a PR!
 # Examples
 
 Checkout the commit messages of this package.
-
-# Changelog
-
-Tue Feb 27 20:11:34 IST 2018 Added auto commit feature
