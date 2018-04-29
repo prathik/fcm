@@ -5,6 +5,7 @@ from message_loaders import LocalHackLoader
 from signatures import get_signature
 import git
 import os
+import subprocess
 
 def append_message(commit_message, append_string):
     return """{}
@@ -19,7 +20,8 @@ def append_message(commit_message, append_string):
 @click.option('--signature', '-s', help='Adds an ascii signature to the commit')
 @click.option('--message', '-m', help="Commit message to be appended with")
 @click.option('--author', '-a', is_flag=True, help="Update author of all commits")
-def main(first, hack, detailed, signature, message, author):
+@click.option('--commits', '-c', is_flag=True, help="Append commit author and the count of commits for running stats")
+def main(first, hack, detailed, signature, message, author, commits):
     """Improving git experience"""
 
     if author:
@@ -68,6 +70,10 @@ Hosted on = {}
 
     if message:
         cm = append_message(message, cm)
+
+    if commits:
+        data = subprocess.check_output(['git', 'shortlog', '-s', '-n'])
+        cm = append_message(cm, data)
 
     if signature:
         cm = append_message(cm,
