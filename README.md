@@ -4,6 +4,16 @@ Generates the interesting commit message for you.
 
 Supports ASCII signatures, hack mode, funny commit messages and more to come!
 
+# Features
+
+* Ascii signature
+* Update existing author to new author
+* Funny commit message
+* Message for hacks
+* Detailed commit message prompt
+
+And more to come..
+
 # Installation
 
 Install using `pip` by running `pip install fcmxz`.
