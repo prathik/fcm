@@ -11,6 +11,7 @@ Supports ASCII signatures, hack mode, funny commit messages and more to come!
 * Funny commit message
 * Message for hacks
 * Detailed commit message prompt
+* Author stats
 
 And more to come..
 

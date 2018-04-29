@@ -10,8 +10,7 @@ import subprocess
 def append_message(commit_message, append_string):
     return """{}
 ===
-{}
-""".format(commit_message, append_string)
+{}""".format(commit_message, append_string)
 
 @click.command()
 @click.option('--first', '-f', is_flag=True, help='Interesting first commit message')
@@ -54,7 +53,8 @@ fi
     else:
         loader = LocalFunnyLoader()
 
-    cm = loader.get_message()
+    if loader:
+        cm = loader.get_message()
 
     if detailed:
         title = raw_input("Commit title: ")
