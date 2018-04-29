@@ -18,8 +18,32 @@ def append_message(commit_message, append_string):
 @click.option('--detailed', '-d', is_flag=True, help='Supports adding a detailed commit message')
 @click.option('--signature', '-s', help='Adds an ascii signature to the commit')
 @click.option('--message', '-m', help="Commit message to be appended with")
-def main(first, hack, detailed, signature, message):
-    """Generates funny commit message for you"""
+@click.option('--author', '-a', is_flag=True, help="Update author of all commits")
+def main(first, hack, detailed, signature, message, author):
+    """Improving git experience"""
+
+    if author:
+        old_email = raw_input("Existing author email: ")
+        author_name = raw_input("Author name for all commits: ")
+        author_email = raw_input("New email of the author: ")
+        os.system("""
+git filter-branch --env-filter '
+OLD_EMAIL="{}"
+CORRECT_NAME="{}"
+CORRECT_EMAIL="{}"
+if [ "$GIT_COMMITTER_EMAIL" = "$OLD_EMAIL" ]
+then
+    export GIT_COMMITTER_NAME="$CORRECT_NAME"
+    export GIT_COMMITTER_EMAIL="$CORRECT_EMAIL"
+fi
+if [ "$GIT_AUTHOR_EMAIL" = "$OLD_EMAIL" ]
+then
+    export GIT_AUTHOR_NAME="$CORRECT_NAME"
+    export GIT_AUTHOR_EMAIL="$CORRECT_EMAIL"
+fi
+' --tag-name-filter cat -- --branches --tags
+""".format(old_email, author_name, author_email))
+        return;
     
     if first:
         loader = LocalMessageLoader()
