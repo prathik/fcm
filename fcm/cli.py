@@ -31,14 +31,15 @@ def main(first, hack, detailed, signature, message):
     cm = loader.get_message()
 
     if detailed:
+        title = raw_input("Commit title: ")
         details = raw_input("What is this commit related to? ")
         testing = raw_input("How was this commit tested? ")
         server = raw_input("Is there any test environment this is deployed to? ")
-        msg = """
+        msg = """{}
 Details = {}
 Testing = {}
 Hosted on = {}
-""".format(details, testing, server)
+""".format(title, details, testing, server)
         cm = append_message(msg, cm)
 
     if message:
